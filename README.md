@@ -1,8 +1,14 @@
-# 天纪提示词 Skill
+# 天纪提示词工具
 
-倪海厦天纪体系学习助手。基于天机道、人间道、地脉道框架做现代化转译，帮用户用传统术数思维分析命理和现实问题。
+这是一个可以安装到支持 Skill 的 AI 工具中的提示词工具。它以天机道、人间道、地脉道为主要框架，帮助用户用传统术数的思路梳理命理和现实问题。
 
 > **声明**：本项目为个人学习整理，不是倪海厦官方授权项目。所有分析仅供学习参考，不构成医疗、投资、婚姻等重大决策的唯一依据。
+
+## 配套网站
+
+如果你想先浏览知识图谱、学习路径和提示词示例，可以访问：[倪海厦知识图谱网站](https://zenoyang-ai.github.io/nihaixia-knowledge-graph/)，也可以查看它的 [GitHub 源码仓库](https://github.com/zenoyang-ai/nihaixia-knowledge-graph)。
+
+两个项目是配套关系：网站负责展示知识结构和学习入口；本项目负责提供可安装的提示词工具。它们分开维护，本项目不包含个人资料或完整知识库。
 
 ## 能力
 
@@ -20,7 +26,7 @@
 ```bash
 # 使用 skill-installer
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --repo <GitHub用户名>/nihaixia-tianji-skill \
+  --repo zenoyang-ai/nihaixia-tianji-skill \
   --path skills/nihaixia-tianji
 ```
 
@@ -28,7 +34,7 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
 
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --url https://github.com/<GitHub用户名>/nihaixia-tianji-skill/tree/main/skills/nihaixia-tianji
+  --url https://github.com/zenoyang-ai/nihaixia-tianji-skill/tree/main/skills/nihaixia-tianji
 ```
 
 安装后重启 Codex 以加载新 Skill。
@@ -37,7 +43,7 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
 
 ```bash
 # 克隆仓库
-git clone https://github.com/<GitHub用户名>/nihaixia-tianji-skill.git
+git clone https://github.com/zenoyang-ai/nihaixia-tianji-skill.git
 
 # 复制到 skills 目录
 cp -r nihaixia-tianji-skill/skills/nihaixia-tianji ~/.codex/skills/
