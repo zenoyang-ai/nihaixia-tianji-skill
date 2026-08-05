@@ -1,6 +1,6 @@
 # 天纪提示词工具
 
-这是一个可以安装到支持 Skill 的 AI 工具中的提示词工具。它以天机道、人间道、地脉道为主要框架，帮助用户用传统术数的思路梳理命理和现实问题。
+这是一个可安装的提示词工具。它以天机道、人间道、地脉道为主要框架，帮助用户用传统术数的思路梳理命理和现实问题。
 
 > **声明**：本项目为个人学习整理，不是倪海厦官方授权项目。所有分析仅供学习参考，不构成医疗、投资、婚姻等重大决策的唯一依据。
 
@@ -10,7 +10,7 @@
 
 两个项目是配套关系：网站负责展示知识结构和学习入口；本项目负责提供可安装的提示词工具。它们分开维护，本项目不包含个人资料或完整知识库。
 
-## 能力
+## 可以做什么
 
 | 功能 | 说明 |
 |------|------|
@@ -21,33 +21,15 @@
 
 ## 安装
 
-### 从 GitHub 安装
+在终端运行下面这一条命令：
 
 ```bash
-# 使用 skill-installer
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
   --repo zenoyang-ai/nihaixia-tianji-skill \
   --path skills/nihaixia-tianji
 ```
 
-或使用 URL 形式：
-
-```bash
-python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
-  --url https://github.com/zenoyang-ai/nihaixia-tianji-skill/tree/main/skills/nihaixia-tianji
-```
-
-安装后重启 Codex 以加载新 Skill。
-
-### 手动安装
-
-```bash
-# 克隆仓库
-git clone https://github.com/zenoyang-ai/nihaixia-tianji-skill.git
-
-# 复制到 skills 目录
-cp -r nihaixia-tianji-skill/skills/nihaixia-tianji ~/.codex/skills/
-```
+安装完成后重启 Codex，让它加载这个工具。本项目只安装提示词和参考规则，不会下载完整的知识图谱或个人资料。
 
 ## 使用示例
 
