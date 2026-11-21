@@ -1,14 +1,21 @@
 # 天纪提示词工具
 
+> **项目已整合至主仓库（推荐前往主仓获取最新维护与开源知识库）**：
+> 本 Skill 现已并入主仓库 **[`zenoyang-ai/nihaixia-knowledge-graph`](https://github.com/zenoyang-ai/nihaixia-knowledge-graph/tree/main/skills/nihaixia-tianji)**，并与 64 节点知识图谱、Obsidian 双链库、AI/RAG 语料包及《天纪》《人纪》开源阅读资料统一维护。
+> 推荐使用最新一行安装命令：
+> ```bash
+> npx skills add zenoyang-ai/nihaixia-knowledge-graph --skill nihaixia-tianji
+> ```
+
 这是一个可安装的提示词工具。它以天机道、人间道、地脉道为主要框架，帮助用户用传统术数的思路梳理命理和现实问题。
 
 > **声明**：本项目为个人学习整理，不是倪海厦官方授权项目。所有分析仅供学习参考，不构成医疗、投资、婚姻等重大决策的唯一依据。
 
 ## 配套网站
 
-如果你想先浏览知识图谱、学习路径和提示词示例，可以访问：[倪海厦知识图谱网站](https://zenoyang-ai.github.io/nihaixia-knowledge-graph/)，也可以查看它的 [GitHub 源码仓库](https://github.com/zenoyang-ai/nihaixia-knowledge-graph)。
+如果你想先浏览知识图谱、学习路径和提示词示例，可以访问国内主站：[倪海厦知识图谱（www.nihaixia-knowledge.xyz）](https://www.nihaixia-knowledge.xyz/)（海外备份：[GitHub Pages](https://zenoyang-ai.github.io/nihaixia-knowledge-graph/)），或直接前往整合后的 [GitHub 主仓库](https://github.com/zenoyang-ai/nihaixia-knowledge-graph)。
 
-两个项目是配套关系：网站负责展示知识结构和学习入口；本项目负责提供可安装的提示词工具。它们分开维护，本项目不包含个人资料或完整知识库。
+本仓库仅作旧安装命令的历史兼容保留，后续更新与维护均在主仓库 [`skills/nihaixia-tianji/`](https://github.com/zenoyang-ai/nihaixia-knowledge-graph/tree/main/skills/nihaixia-tianji) 进行。
 
 ## 可以做什么
 
