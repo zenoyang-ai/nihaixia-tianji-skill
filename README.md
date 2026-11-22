@@ -1,34 +1,35 @@
-# 天纪提示词工具
+# 天纪学习助手 Skill（nihaixia-tianji）
 
-> **项目已整合至主仓库（推荐前往主仓获取最新维护与开源知识库）**：
-> 本 Skill 现已并入主仓库 **[`zenoyang-ai/nihaixia-knowledge-graph`](https://github.com/zenoyang-ai/nihaixia-knowledge-graph/tree/main/skills/nihaixia-tianji)**，并与 64 节点知识图谱、Obsidian 双链库、AI/RAG 语料包及《天纪》《人纪》开源阅读资料统一维护。
-> 推荐使用最新一行安装命令：
-> ```bash
-> npx skills add zenoyang-ai/nihaixia-knowledge-graph --skill nihaixia-tianji
-> ```
+面向倪海厦《天纪》体系的轻量 AI Skill，以**天机道、人间道、地脉道**为框架，提供八字、紫微斗数、易经三才与小六壬四类结构化学习与问题拆解提示词，支持 Claude Code、Codex、Cursor、Antigravity 等通用 Skills 客户端一键安装。
 
-这是一个可安装的提示词工具。它以天机道、人间道、地脉道为主要框架，帮助用户用传统术数的思路梳理命理和现实问题。
+> **独立轻量入口说明**：本仓库只包含 `nihaixia-tianji` Skill 规则与参考提示词，适合希望快速单独安装 Skill 的用户。如果你希望完整浏览 **69 节点知识导图**、Obsidian 双链笔记、AI/RAG 语料包及《天纪》《人纪》阅读资料，欢迎前往主仓库 **[`zenoyang-ai/nihaixia-knowledge-graph`](https://github.com/zenoyang-ai/nihaixia-knowledge-graph)** 或直接访问在线站点 **[www.nihaixia-knowledge.xyz](https://www.nihaixia-knowledge.xyz/)**。
 
-> **声明**：本项目为个人学习整理，不是倪海厦官方授权项目。所有分析仅供学习参考，不构成医疗、投资、婚姻等重大决策的唯一依据。
+> **声明**：本项目为个人学习整理，非倪海厦官方授权项目。所有分析仅供学习交流与思路参考，不构成医疗、投资、婚姻等重大决策依据。
 
-## 配套网站
+## 核心能力
 
-如果你想先浏览知识图谱、学习路径和提示词示例，可以访问国内主站：[倪海厦知识图谱（www.nihaixia-knowledge.xyz）](https://www.nihaixia-knowledge.xyz/)（海外备份：[GitHub Pages](https://zenoyang-ai.github.io/nihaixia-knowledge-graph/)），或直接前往整合后的 [GitHub 主仓库](https://github.com/zenoyang-ai/nihaixia-knowledge-graph)。
-
-本仓库仅作旧安装命令的历史兼容保留，后续更新与维护均在主仓库 [`skills/nihaixia-tianji/`](https://github.com/zenoyang-ai/nihaixia-knowledge-graph/tree/main/skills/nihaixia-tianji) 进行。
-
-## 可以做什么
-
-| 功能 | 说明 |
+| 模块 | 适用场景与说明 |
 |------|------|
-| 八字分析 | 基础校盘与现实复盘、大运流年与阶段策略 |
-| 紫微斗数 | 命盘结构化解读（需用户提供文墨天机命盘数据） |
-| 易经三才 | 现实问题拆解（不需要术数数据，只需要一个具体问题） |
-| 小六壬 | 日常小事快断（支持手动时间/当前时间两种模式） |
+| **八字分析** | 基础校盘与现实复盘、大运流年与阶段策略 |
+| **紫微斗数** | 命盘结构化解读（需用户提供文墨天机等排盘数据） |
+| **易经三才** | 现实决策问题拆解（无需术数排盘，直接输入具体问题即可） |
+| **小六壬** | 日常小事快断（支持手动指定时间或当前时间两种模式） |
 
-## 安装
+## 快速安装
 
-在终端运行下面这一条命令：
+### 方式一：通用一键安装（推荐，支持 Claude Code / Codex / Cursor 等）
+
+```bash
+npx skills add zenoyang-ai/nihaixia-tianji-skill
+```
+
+也可直接从知识导图主仓库安装同一 Skill：
+
+```bash
+npx skills add zenoyang-ai/nihaixia-knowledge-graph --skill nihaixia-tianji
+```
+
+### 方式二：Codex 内置脚本安装
 
 ```bash
 python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-github.py \
@@ -36,50 +37,54 @@ python3 ~/.codex/skills/.system/skill-installer/scripts/install-skill-from-githu
   --path skills/nihaixia-tianji
 ```
 
-安装完成后重启 Codex，让它加载这个工具。本项目只安装提示词和参考规则，不会下载完整的知识图谱或个人资料。
+安装完成后开启新对话即可触发使用。本项目仅安装规则与提示词，不会下载完整知识库文件。
 
 ## 使用示例
 
-```
+```text
 用倪海厦天纪帮我看一下这个八字
-我有紫微命盘，帮我结构化分析
+我有紫微命盘，帮我做结构化分析
 用易经三才帮我拆一下要不要换工作
 按现在时间用小六壬看一下今天去谈合作顺不顺
 ```
 
+## 配套在线站点与主仓库
+
+- **在线知识导图与 AI 问答主站**：[www.nihaixia-knowledge.xyz](https://www.nihaixia-knowledge.xyz/)（海外镜像：[GitHub Pages](https://zenoyang-ai.github.io/nihaixia-knowledge-graph/)）
+- **开源主仓库（100+ Stars，含 69 节点图谱与双链库）**：[`zenoyang-ai/nihaixia-knowledge-graph`](https://github.com/zenoyang-ai/nihaixia-knowledge-graph)
+
 ## 目录结构
 
-```
+```text
 nihaixia-tianji-skill/
 ├── README.md                           # 本文件
-├── LICENSE                              # MIT License
+├── LICENSE                             # MIT License
 └── skills/
     └── nihaixia-tianji/
-        ├── SKILL.md                     # 触发条件、路由选择、执行流程
+        ├── SKILL.md                    # 触发条件、路由选择与执行流程
         ├── agents/
-        │   └── openai.yaml              # Agent 元数据
+        │   └── openai.yaml             # Agent 元数据
         └── references/
-            ├── prompts.md               # 4 个完整提示词
-            └── xiaoliuren.md            # 小六壬算法与速查表
+            ├── prompts.md              # 核心提示词模板
+            └── xiaoliuren.md           # 小六壬算法与速查表
 ```
 
-## 提示词列表
+## 内置提示词清单
 
-| 提示词 | 场景 |
-|--------|------|
-| 八字基础校盘与现实复盘 | 有八字数据，看整体格局、喜用神、过去经历验证 |
-| 八字大运流年与阶段策略 | 已确认格局，看财运事业婚姻健康趋势和未来十年 |
-| 紫微斗数命盘结构化解读 | 有紫微命盘，看宫位星曜、流年人际、职场细节 |
-| 易经三才现实问题拆解 | 有具体困惑，用阴阳三才时位框架分析 |
-| 小六壬日常决策 | 日常小事快速参考（出行/约见/办事/交易） |
+| 提示词 | 适用场景 |
+|--------|----------|
+| 八字基础校盘与现实复盘 | 已有八字排盘，查看整体格局、喜用神与过往验证 |
+| 八字大运流年与阶段策略 | 已确认格局，梳理阶段节奏与现实应对方向 |
+| 紫微斗数命盘结构化解读 | 已有紫微命盘，按宫位星曜、流年人际与职场细节解读 |
+| 易经三才现实问题拆解 | 面临具体困惑，用阴阳三才时位框架梳理取舍 |
+| 小六壬日常决策 | 日常出行、约见、办事等轻量场景参考 |
 
 ## 安全边界
 
-- 不自行排盘，八字/命盘/起课数据必须由用户提供
-- 不做绝对化断言，所有结论为"参考分析/倾向/可能性"
+- 不代为排盘，八字、命盘与起课数据须由用户提供
+- 不做绝对化断言，结论统一作为倾向与思路参考
 - 不构成医疗、投资、婚姻等重大决策的唯一依据
-- 仅供学习参考
 
 ## License
 
-MIT
+MIT License
